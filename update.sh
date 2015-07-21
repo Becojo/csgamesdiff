@@ -1,8 +1,8 @@
 #!/bin/bash
 
-wget "http://csgames.org/2015/" -O fr.html
-wget "http://csgames.org/2015/en" -O en.html
+wget "http://csgames.org/2016/" -O 2016.html
+wget "http://csgames.org/corpo/announcement-cs-games-2016/" -O announcement.html
 
-git add {fr,en}.html
+git add *.html
 git commit -m 'Le site a changé'
-git push origin master
+# git push origin master
