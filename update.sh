@@ -1,7 +1,7 @@
 #!/bin/bash
 
-curl -L "http://csgames.org/2017" > 2017.html
+wget -N -r -np --content-on-error "http://csgames.org/2017"
 
-git add *.html
+git add .
 git commit -m 'Le site a changé'
 git push origin master
