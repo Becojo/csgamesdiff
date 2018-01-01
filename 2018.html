@@ -1,57 +1,286 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
-<title>500 Server Error</title>
-<style>
-body {
-color: #666;
-text-align: center;
-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-margin: auto;
-font-size: 14px;
-}
-h1 {
-font-size: 56px;
-line-height: 100px;
-font-weight: normal;
-color: #456;
-}
-h2 {
-font-size: 24px;
-color: #666;
-line-height: 1.5em;
-}
-h3 {
-color: #456;
-font-size: 20px;
-font-weight: normal;
-line-height: 28px;
-}
-hr {
-max-width: 800px;
-margin: 18px auto;
-border: 0;
-border-top: 1px solid #EEE;
-border-bottom: 1px solid white;
-}
-img {
-max-width: 40vw;
-}
-.container {
-margin: auto 20px;
-}
-</style>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="/assets/images/favicon.ico" />
+<title>CS Games 2018</title>
+<meta name="author" content="Camille Béland" />
+<meta name="description" content="CS Games 2018 website" />
+<meta name="keywords" content="CS Games 2018, " />
+<meta content="" property="fb:app_id">
+<meta content="CS Games 2018" property="og:site_name">
+<meta content="CS Games 2018" property="og:title">
+<meta content="website" property="og:type">
+<meta content="CS Games 2018 website" property="og:description">
+<meta content="/" property="og:url">
+<meta content="http://aboutashu.com/static/img/logo-high-resolution.png" property="og:image">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@">
+<meta name="twitter:creator" content="@">
+<meta name="twitter:title" content="CS Games 2018">
+<meta name="twitter:url" content="/">
+<meta name="twitter:description" content="CS Games 2018 website">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+<link rel="stylesheet" href="/assets/stylesheets/syntax.css">
+<link rel="stylesheet" href="/assets/stylesheets/main.css">
+<link rel="stylesheet" href="/assets/stylesheets/projects.css">
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+ga('create', '', 'auto');
+ga('send', 'pageview');
+</script>
 </head>
-<body>
-<h1>
-<img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjEwIiBoZWlnaHQ9IjIxMCIgdmlld0JveD0iMCAwIDIxMCAyMTAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgPHBhdGggZD0iTTEwNS4wNjE0IDIwMy42NTVsMzguNjQtMTE4LjkyMWgtNzcuMjhsMzguNjQgMTE4LjkyMXoiIGZpbGw9IiNlMjQzMjkiLz4KICA8cGF0aCBkPSJNMTA1LjA2MTQgMjAzLjY1NDhsLTM4LjY0LTExOC45MjFoLTU0LjE1M2w5Mi43OTMgMTE4LjkyMXoiIGZpbGw9IiNmYzZkMjYiLz4KICA8cGF0aCBkPSJNMTIuMjY4NSA4NC43MzQxbC0xMS43NDIgMzYuMTM5Yy0xLjA3MSAzLjI5Ni4xMDIgNi45MDcgMi45MDYgOC45NDRsMTAxLjYyOSA3My44MzgtOTIuNzkzLTExOC45MjF6IiBmaWxsPSIjZmNhMzI2Ii8+CiAgPHBhdGggZD0iTTEyLjI2ODUgODQuNzM0Mmg1NC4xNTNsLTIzLjI3My03MS42MjVjLTEuMTk3LTMuNjg2LTYuNDExLTMuNjg1LTcuNjA4IDBsLTIzLjI3MiA3MS42MjV6IiBmaWxsPSIjZTI0MzI5Ii8+CiAgPHBhdGggZD0iTTEwNS4wNjE0IDIwMy42NTQ4bDM4LjY0LTExOC45MjFoNTQuMTUzbC05Mi43OTMgMTE4LjkyMXoiIGZpbGw9IiNmYzZkMjYiLz4KICA8cGF0aCBkPSJNMTk3Ljg1NDQgODQuNzM0MWwxMS43NDIgMzYuMTM5YzEuMDcxIDMuMjk2LS4xMDIgNi45MDctMi45MDYgOC45NDRsLTEwMS42MjkgNzMuODM4IDkyLjc5My0xMTguOTIxeiIgZmlsbD0iI2ZjYTMyNiIvPgogIDxwYXRoIGQ9Ik0xOTcuODU0NCA4NC43MzQyaC01NC4xNTNsMjMuMjczLTcxLjYyNWMxLjE5Ny0zLjY4NiA2LjQxMS0zLjY4NSA3LjYwOCAwbDIzLjI3MiA3MS42MjV6IiBmaWxsPSIjZTI0MzI5Ii8+Cjwvc3ZnPgo=" alt="GitLab Logo" /><br />
-500
-</h1>
-<div class="container">
-<h3>An internal server error occured.</h3>
-<hr />
-<p>Please contact your GitLab administrator.</p>
+<body class="home">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<a class="navbar-brand" href="#">CS Games 2018</a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+<li class="nav-item">
+<a class="nav-link" href="#The event">The event</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#Participate">Participate</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#Competitions">Competitions</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#Getting involved">Getting involved</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#Rules">Rules</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#Sponsors">Sponsors</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#Contact">Contact</a>
+</li>
+</ul>
+<ul class="nav nav-item my-2 my-lg-0">
+<li>
+<a class="nav-link" href="/fr">FR</a>
+</li>
+</ul>
 </div>
+</nav>
+<div class="logo">
+<img src="/assets/images/cs-games-logo.png" />
+</div>
+<div class="container main outer">
+<h2 class="date">March 23rd to March 26th 2018</h2>
+<h2 id="The event">The event</h2>
+<div class="row">
+<div class="col-md-12">
+<p>The Computer Science Games are a collegiate competition that includes challenges from all aspects of computing. The Games are a weekend long thrill ride with logic puzzles, difficult algorithms, intense video game competitions, social activities, and of course, programming. Organized by students from different university every year, the CS Games is open to all undergraduate students. Teams are composed from 7 to 10 skilled people, each participating in multiple simultaneous challenges.</p>
+</div>
+</div>
+<h2 id="Participate">Participate</h2>
+<div class="row">
+<div class="col-md-12">
+<p>To participate, you need to buy a ticket for each team member.</p>
+<p>A team is composed of 7 to 10 participants. They can be accompanied by a mentor to coach them, the mentor in question can be a chaperone from the faculty (professor, club advisor, etc.) as well as a former student. Note that the mentor cannot participate in any competition block with the exception of Puzzle Hero.</p>
+<div class="text-center">
+<a href="/assets/en/lore-guide.pdf" target="_blank" class="btn btn-raised btn-primary text-center">Lore guide</a>
+</div>
+</div>
+</div>
+<h2 id="Competitions">Competitions</h2>
+<div class="row">
+<div class="project-item col-md-4 col-md-offset-0 col-sm-6 col-xs-10 col-xs-offset-1" data-tags='null'>
+<div class="project-outer">
+<div class="project-inner">
+<h3 class="project-headlines">Operating Systems</h3>
+<div class="project-content">
+<p>Develop a library that is able to communicate with an obscure device. Make sure your code meets the requirements!</p>
+<p><b>Participants</b> : 2</p>
+<p><b>Languages/Skills</b> :
+C
+</p>
+</div>
+</div>
+</div>
+</div>
+<div class="project-item col-md-4 col-md-offset-0 col-sm-6 col-xs-10 col-xs-offset-1" data-tags='null'>
+<div class="project-outer">
+<div class="project-inner">
+<h3 class="project-headlines">Embedded Programming</h3>
+<div class="project-content">
+<p>You will have to program a never seen before machine.</p>
+<p><b>Participants</b> : 2</p>
+<p><b>Languages/Skills</b> :
+LAVAL ASM
+</p>
+</div>
+</div>
+</div>
+</div>
+<div class="project-item col-md-4 col-md-offset-0 col-sm-6 col-xs-10 col-xs-offset-1" data-tags='null'>
+<div class="project-outer">
+<div class="project-inner">
+<h3 class="project-headlines">Relay Programming</h3>
+<div class="project-content">
+<p>Three challenges for three people. You will have to contribute to each projects for an hour without being in contact with your other teammates. Make sure your peers can build off the work you've done.</p>
+<p><b>Participants</b> : 3</p>
+</div>
+</div>
+</div>
+</div>
+<div class="project-item col-md-4 col-md-offset-0 col-sm-6 col-xs-10 col-xs-offset-1" data-tags='null'>
+<div class="project-outer">
+<div class="project-inner">
+<h3 class="project-headlines">Sport</h3>
+<div class="project-content">
+<p>As penguins, some of our movements are limited. We are going to need your help.</p>
+<p><b>Languages/Skills</b> :
+Deodorant and indoor sportswear
+</p>
+</div>
+</div>
+</div>
+</div>
+<div class="project-item col-md-4 col-md-offset-0 col-sm-6 col-xs-10 col-xs-offset-1" data-tags='null'>
+<div class="project-outer">
+<div class="project-inner">
+<h3 class="project-headlines">Artificial Intelligence</h3>
+<div class="project-content">
+<p>Bring your own laptop to create a bot able to survive on an unknown planet with limited resources</p>
+<p><b>Participants</b> : 2</p>
+</div>
+</div>
+</div>
+</div>
+<div class="project-item col-md-4 col-md-offset-0 col-sm-6 col-xs-10 col-xs-offset-1" data-tags='null'>
+<div class="project-outer">
+<div class="project-inner">
+<h3 class="project-headlines">Functional Programming</h3>
+<div class="project-content">
+<p>We like our communism just like our programming languages : no class</p>
+<p><b>Participants</b> : 2</p>
+<p><b>Languages/Skills</b> :
+Erlang, Clojure, Haskell
+</p>
+</div>
+</div>
+</div>
+</div>
+<div class="project-item col-md-4 col-md-offset-0 col-sm-6 col-xs-10 col-xs-offset-1" data-tags='null'>
+<div class="project-outer">
+<div class="project-inner">
+<h3 class="project-headlines">Machine Learning</h3>
+<div class="project-content">
+<p>A very classy competition! Will you code an algorithm that is more ham than spam?</p>
+<p><b>Languages/Skills</b> :
+Python
+</p>
+</div>
+</div>
+</div>
+</div>
+<div class="project-item col-md-4 col-md-offset-0 col-sm-6 col-xs-10 col-xs-offset-1" data-tags='null'>
+<div class="project-outer">
+<div class="project-inner">
+<h3 class="project-headlines">Security</h3>
+<div class="project-content">
+<p>Will you be able to circumvent spaceship grade defense measures? I hope your malware on the blockchain is ready...</p>
+<p><b>Participants</b> : 2</p>
+<p><b>Languages/Skills</b> :
+Rust.
+</p>
+</div>
+</div>
+</div>
+</div>
+<div class="project-item col-md-4 col-md-offset-0 col-sm-6 col-xs-10 col-xs-offset-1" data-tags='null'>
+<div class="project-outer">
+<div class="project-inner">
+<h3 class="project-headlines">Team Software Engineering</h3>
+<div class="project-content">
+<p>Show us how you can develop... under pressure! After all, our spaceship is in danger, but we count on you to keep the pace and survive! Clean Code, DDD, Clean Architecture, TDD, Automated tests, Continuous integration, Continuous deployment, Shippable product... So many buzzwords we frequently hear from your different cultures, but do you really master them?</p>
+<p><b>Participants</b> : 3</p>
+<p><b>Languages/Skills</b> :
+Java
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<h2 id="Getting involved">Getting involved</h2>
+<div class="row">
+<div class="col-md-12 col-xs-12">
+<p>The Organization Committee has lots to take care of during the CS Games weekend and will definitely need volunteers. If you want to discover the behind the scenes of the CS Games, and experience this extraordinary weekend with us, we would be overjoyed to have you join the team!</p>
+<p>Why get involved?</p>
+<ul>
+<li>Be part of one of the biggest academic Computer Science competitions</li>
+<li>Make new friends for life within the CS Games Community</li>
+<li>Learn new skills</li>
+<li>Network with possible future employers</li>
+<li>Have fun</li>
+</ul>
+<div class="text-center">
+<a href="https://www.eventbrite.ca/e/cs-games-2018-tickets-39121328948" class="btn btn-raised btn-primary">Buy tickets</a>
+</div>
+</div>
+</div>
+<h2 id="Rules">Rules</h2>
+<div class="row">
+<div class="col-md-12">
+<ul>
+<li>Demonstrate civility, courtesy and respect for all individuals present (students, staff, sponsors, participants, organizers, volunteers, etc.)</li>
+<li>Respect any and all equipment</li>
+<li>Limit the space taken by your personal belongings to reasonable dimensions. (i.e. do not leave your belongings scattered everywhere)</li>
+<li>It is strictly forbidden to bring or consume alcohol on campus at any time, including in opaque containers (insulated cup, coffee cup, etc.)</li>
+<li>It is strictly forbidden to bring food or liquids in the Faculty’s classrooms</li>
+<li>It is strictly forbidden to wander in the corridors and spaces not designated for the competition</li>
+</ul>
+</div>
+</div>
+<h2 id="Sponsors">Sponsors</h2>
+<div class="row">
+<div class="col-md-12 col-xs-12">
+<h3>Become a sponsor</h3>
+<p>Every year, the CS Games attract the best students in computer science, chosen by their universities or student organizations for their excellence. This is a unique opportunity to meet the best and most passionate students in North America, all within the same space.</p>
+<p>Why sponsor?</p>
+<ul>
+<li>Access to contestants' resumes</li>
+<li>Display your company</li>
+<li>Distribute promotional items</li>
+<li>Presence during the competition</li>
+<li>"Puzzle Hero" integration</li>
+<li>Much more</li>
+</ul>
+<div class="text-center">
+<a href="/assets/en/sponsorship.pdf" target="_blank" class="btn btn-raised btn-primary">More information</a>
+</div>
+</div>
+</div>
+<h2 id="Contact">Contact</h2>
+<div class="row">
+<div class="col-sm-12">
+Université Laval<br>
+2325 Rue de l'Université<br>
+Ville de Québec, QC G1V 0A6<br>
+
+</div>
+</div>
+<footer>
+© 2018 CS Games | All Rights Reserved
+</footer>
+</div> 
+<script data-cfasync="false" src="/cdn-cgi/scripts/af2821b0/cloudflare-static/email-decode.min.js"></script><script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+<script src="/assets/javascript/material.min.js"></script>
+<script src="/assets/javascript/main.js"></script>
+
 </body>
 </html>
